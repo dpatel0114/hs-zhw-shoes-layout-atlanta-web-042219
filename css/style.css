@@ -3,7 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Clicker+Script); /* font-family: 'Clicker Script', cursive; */
 
 /* scale all images, and media to accomodate responsive layout. */
-img, video, audio, iframe, table, form { 
+img, video, audio, iframe, table, form {
   width:100%; /* IE */
   max-width: 100%; /* FF, Safari, Chrome */
 }
@@ -97,6 +97,14 @@ input.verif_box {
   margin-right: 5px;
 }
 
+.shadow [ul li ]{
+  font-size: 0.8em;
+}
+
+*{
+  box-sizing: border-box;
+}
+
 iframe {
   border: 0;
   padding: 0;
@@ -105,25 +113,64 @@ iframe {
   height: 353px;
 }
 
+.clearfix:after{
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
 .wrapper {
-  width: 960px;
+  width: 1080px;
   margin: 0 auto;
 }
 
 .shadow {
   box-shadow: 0 3px 10px #333;
+  box-sizing: inherit;
+  max-height: 500px;
 }
+
+.col1{
+  width: 73%;
+  float: left;
+
+}
+.col2{
+  width: 25%;
+  float: right;
+  font-size: 12.5px;
+
+}
+
+[class*="col"]{
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+.col3{
+  width: 31%;
+  float: left;
+  box-sizing: border-box;
+}
+
 
 .milk_text {
   font: bold 42px 'Elsie Swash Caps', cursive;
   color: white;
   text-shadow: 0 2px 3px #000;
   margin: 0 0 10px;
+
 }
 
 .border_right {
   border-right: 1px dotted #ccc;
   padding-right: 20px;
+}
+.first {
+  margin-left: 0;
 }
 
 .thumbs_up {
@@ -133,6 +180,8 @@ iframe {
 .contact_form {
   height: 415px;
 }
+
+
 
 /********** Header **********/
 
@@ -250,6 +299,7 @@ a.gplus:active { background-position: -80px -80px; }
   background-position: center top, left top;
   background-repeat: no-repeat, repeat-y;
   padding: 30px 0;
+
 }
 
 /********** Sections **********/
@@ -263,6 +313,8 @@ section a {
   color: #555;
   text-decoration: underline;
 }
+
+
 
 /********** Details **********/
 
@@ -287,6 +339,8 @@ section a {
 #details a:hover, #details a:active {
   text-decoration: underline;
 }
+
+
 
 /********** Footer **********/
 
